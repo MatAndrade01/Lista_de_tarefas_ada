@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+
+  font-family: "Roboto", serif;;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 90vh;
+  width: 90vw;
+  background-color: #222;
+}
+
+main h1 {
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+main .section-form #todo-form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+main .section-form #todo-form input {
+  background-color: transparent;
+  color: #FFFFFF;
+
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  
+  width: 250px;
+  height: 40px;
+  font-size: 1rem;
+
+  transition: background-color 0.5s;
+}
+
+main .section-form #todo-form input:hover {
+  background-color: #161616;
+  transition: background-color 0.5s;
+}
+
+main .section-form #todo-form input:focus {
+  background-color: #161616;
+}
+
+main .section-form #todo-form button {
+  border: none;
+  border-radius: 5px;
+
+  background-color: green;
+  color: #FFFFFF;
+  width: 100px;
+  font-size: 0.8rem;
+  transition: background-color 0.5s;
+}
+
+main .section-form #todo-form button:hover {
+  background-color: rgb(6, 95, 6);
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+main .section-list {
+  display: flex;
+  justify-content: center;
+
+  background-color: #161616;
+  color: #FFFFFF;
+  margin-top: 3rem;
+  width: 80vw;
+}
+
+main .section-list #todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  width: 100%;
+}
+
+main .section-list #todo-list li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+main .section-list #todo-list li button {
+  border: none;
+  border-radius: 5px;
+
+  background-color: rgb(189, 11, 11);
+  transition: background-color 0.5s;
+  color: #FFFFFF;
+  width: 100px;
+  height: 30px;
+}
+
+main .section-list #todo-list li button:hover {
+  background-color: rgb(163, 8, 8);
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
